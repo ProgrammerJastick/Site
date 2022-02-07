@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <!--style = font-size: "15" lang = "ru" class = "main" data-lt-installed = "true"-->
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="C:\Users\Lord\Desktop\Chertogi\CHertogi.ico" type="image/x-icon">
+    <title> Chertogi </title>
+    <header>
+    <!--верхний блок меню (основа)-->
+    <nav class="dws-menu">
+        <ul class=" SMenu">
+            <li><img src="chertogi.png" class="Logo" alt="" height="100" width="100" style="padding-right: 10px;"></li>
+            <li>
+                <a href="https://www.lamborghini.com/en-en/models">Models </a>
+                <ul>
+                    <li><a href="linkr1.html">Test1</a></li>
+                    <li><a href="linkr2.html">Test2</a></li>
+                    <li><a href="linkr3.html">Test3</a></li>
+                    <li><a href="linkr4.html">Test4</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="https://www.lamborghini.com/en-en/custom-solutions">Custom </a>
+                <ul>
+                    <li><a href="#">Test_1</a></li>
+                    <li><a href="#">Test_2</a></li>
+                    <li><a href="#">Test_3</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="https://www.lamborghini.com/en-en/ownership">Ownership</a>
+                <ul>
+                    <li><a href="#">Test_11</a></li>
+                    <li><a href="#">Test_22</a></li>
+                    <li><a href="#">Test_33</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="https://www.lamborghini.com/en-en/motorsport">Motorsport</a>
+                <ul>
+                    <li><a href="#">The test1</a></li>
+                    <li><a href="#">The test2</a></li>
+                    <li><a href="#">The test3</a></li>
+                </ul>
+            </li>
+            <li><a href="https://www.lamborghini.com/en-en/dealer-locator">Dealerships</a></li>
+            <li><a href="https://www.lamborghini.com/en-en/museum">Museum</a></li>
+            <li><a href="https://www.lamborghini.com/en-en/store">Store</a></li>
+            <li>
+                <div class="containeR" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <!--трехполосное подменю-->
+                <ul class="ThreeLineMenu" style=" margin-left: -125px;" onclick="LowerMenu(this)">
+                    <li><a href="#">Test_11</a></li>
+                    <li><a href="#">Test_22</a></li>
+                    <li><a href="#">Test_33</a></li>
+                </ul>
+            </li>
+
+        </ul>
+        <!--ссылки на ксс документы и шрифты-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    </nav>
+</header>
+    <link rel="stylesheet" href="UpperMenu.css">
+    <link rel="stylesheet" href="TextOnBox.css">
+</head>
+<body>
+    <!-- скрипт на трехполосое меню -->
+    <script>
+        
+            function myFunction(x) {
+                x.classList.toggle("change");
+            }
+            
+        
+    </script>
+    <link rel="stylesheet" href="TextOnVideo.css">
+    <!-- главное фоновое видео -->
+    <div class="container">
+        <video class="video" preload="auto" no-controls autoplay loop playsinline muted>
+            <source src="Character.mp4" type="video/mp4">
+        </video>
+        <!-- слова на видео -->
+        <div class="textBox">
+            <span class="text1">
+                Chertogi
+            </span>
+            <span class="Tech">
+                <span class="text2">
+                    <br />  Present
+                </span>
+            </span>
+        </div>
+    </div>
+    <!-- фото с кнопками вперед/назад -->
+    <link rel="stylesheet" href="PhotoList.css">
+    <div class="image_size">
+        <div class="NextPrev">
+            <button class="btn" onclick="prev()"> Prev </button>
+            <button class="btn2" onclick="next()"> Next </button>
+            <p class="textbtn" id="Tbtn">There is the <br />some text </p>
+        </div>
+        <img id="image" src="note.png" onClick="imgsrc();" width="1000" height="571">
+        <script language="javascript">
+            var i = 0;
+            var p = document.getElementById("Tbtn");
+            var word = ['There is the <br /> some text ', 'There is ', 'There  some text']
+            var image = document.getElementById("image");
+            var imgs = new Array('note.png', 'note_30.jpg', 'note_30_.png');
+            /*   function imgsrc() {
+                i++;
+                image.src = imgs[i % imgs.length];
+            } */
+            function next() {
+                i++;
+                image.src = imgs[i % imgs.length];
+                /* p = document.write(word[i % word.length]); */
+                p.innerHTML = word[i % word.length];
+            }
+            function prev() {
+                if (i > 0) {
+                    i--;
+                    image.src = imgs[i % imgs.length];
+                    /* p = document.write(word[i % word.length]); */
+                    p.innerHTML = word[i % word.length];
+                }
+                else {
+                    i = 2;
+                    image.src = imgs[2];
+                    /*  p = document.write(word[2]); */
+                    p.innerHTML = word[2];
+                }
+            }
+        </script>
+    </div>
+    <!-- фото с кнопками 1/2/3 -->
+    <link rel="stylesheet" href="PhotoList2.css">
+    <div class="image_size2">
+        <div class="NextPrev2">
+            <button class="btn2" onclick="Car1()"> Car1 </button>
+            <button class="btn2_2" onclick="Car2()"> Car2 </button>
+            <button class="btn3" onclick="Car3()"> Car3 </button>
+            <p class="textbtn2" id="Tbtn2">Some car </p>
+        </div>
+        <img id="image2" src="1.jpg" onClick="imgsrc2();" width="1000" height="571">
+        <script language="javascript">
+            var p2 = document.getElementById("Tbtn2");
+            var word2 = ['Some car', 'Some Car 2 ', 'Some Car 3']
+            var image2 = document.getElementById("image2");
+            var imgs2 = new Array('1.jpg', '2.jpg', '3.jpg');
+
+            function Car1() {
+                image2.src = imgs2[0];
+                /* p = document.write(word[i % word.length]); */
+                p2.innerHTML = word2[0];
+            }
+            function Car2() {
+                image2.src = imgs2[1];
+                /* p = document.write(word[i % word.length]); */
+                p2.innerHTML = word2[1];
+            }
+
+            function Car3() {
+                image2.src = imgs2[2];
+                /*  p = document.write(word[2]); */
+                p2.innerHTML = word2[2];
+            }
+        </script>
+    </div>
+    <!-- поноразмерное фото -->
+    <div class="image_size3">
+        <div class="NextPrev3">
+            <p class="textbtn3" id="Tbtn3">Bicycle Bicycle OR  <br /></p>
+            <p class="textbtn4" id="Tbtn4">BICYCLE </p>
+        </div>
+        <img id="image3" src="IMG_MAIN.jpg" onClick="imgsrc3();" width="1000" height="571">
+    </div>
+    <!-- новостной блок -->
+    <div class="News">
+        <p class="NewsWord">News  <br /></p>
+        <p class="NewsWord1">About it </p>
+        <img src="IMG_News1.jpg" width="1000" height="571">
+        <p class="NewsWord">MAIN TEXT MAIN TEXT </p>
+        <p class="NewsWord1">Not main TEXT Not main TEXT </p>
+        <p class="MiddleWord">
+            <img style="padding-right: 30px;" src="IMG_News2.jpg" width="600" height="260" align="left">
+            <br /> <br /> <br />
+            Text Text Text Text Text Text TextText Text Text Text Text Text TextText Text Text Text Text Text Text
+            <br />
+            <button class="MI" style=" margin-top: 1%;"> MORE INFO </button>
+        </p>
+        <!--<br /> <br /><br /> -->
+        <p class="MiddleWord">
+            <img style="padding-top: 20px; padding-right: 30px;" src="IMG_News3.jpg" width="600" height="260" align="left">
+            <br /><br /> <br /> <br /> <br />
+            Text Text Text Text Text Text TextText Text Text Text Text Text TextText Text Text Text Text Text Text
+            <br />
+            <button class="MI" style=" margin-top: 1%;"> MORE INFO </button>
+            <br /> <br /> <br />
+        </p>
+        <br /> <br /> <br />
+    </div>
+    <button class="MIM" style=" margin-top: 1%; "> I WANT SEE MORE </button>
+    <br /> <br /> <br />
+    <!-- контактная информация / информация о правах / подвал -->
+    <footer>
+        <nav class="dws-menu">
+            <ul class=" SMenu">
+                <li><a href="#">Company </a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact Us</a> </li>
+                <li><a href="#">MEDIA CENTER</a></li>
+                <li><a href="#">PRIVACY & LEGAL</a></li>
+                <li><a href="#">COOKIE SETTINGS</a></li>
+            </ul>
+            <p class="footStyle" style="text-indent: 20px; padding-bottom: 1%;">
+                The consumption and emissions values in the website refer to your geographical IP. This value might be unrealistic if you navigate using VPN or if the position of your Internet provider is imprecise. If you believe you are incorrectly geolocalized, contact your dealer to get valid consumption and emissions information in your area. <br />
+                Copyright © 2021 Automobili Lamborghini S.p.A. a sole shareholder company part of Audi Group. <br />
+                All rights reserved. VAT no. IT 00591801204 <br />
+            </p>
+        </nav>
+    </footer>
+</body>
+</html>

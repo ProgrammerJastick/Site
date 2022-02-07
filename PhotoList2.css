@@ -1,0 +1,254 @@
+.image_size2 {
+    align-content: center;
+    position: relative;
+    width: 100%;
+    height:100%;
+}
+.image_size2 img {
+    width: 100%;
+    height: auto;
+    }
+
+
+
+    .image_size2 .btn2 {
+        position: absolute;
+        top: 86%;
+        left: 13%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgba(0, 125, 215, 0);
+        color: white;
+        font-size: 25px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: 700;
+       
+        
+    }
+        .image_size2 .btn2::after {
+            display: block;
+            position: absolute;
+            left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+            width: 0; /*задаём длинну линии до наведения курсора*/
+            height: 2px; /*задаём ширину линии*/
+            background-color: black;
+            content: "";
+            transition: width 0.3s ease-out; /*задаём время анимации*/
+            margin: 0px 30px 15px 20px;
+        }
+.image_size2 .btn2:hover {
+    color: black;
+}
+    .image_size2 .btn2:focus::after, .image_size2 .btn2:hover::after {
+        width: 100%;
+    }
+
+
+
+    .image_size2 .btn2_2 {
+        position: absolute;
+        top: 86%;
+        left: 23%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgba(0, 125, 215, 0);
+        color: white;
+        font-size: 25px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: 700;
+       
+        
+    }
+        .image_size2 .btn2_2::after {
+            display: block;
+            position: absolute;
+            left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+            width: 0; /*задаём длинну линии до наведения курсора*/
+            height: 2px; /*задаём ширину линии*/
+            background-color: black;
+            content: "";
+            transition: width 0.3s ease-out; /*задаём время анимации*/
+            margin: 0px 30px 15px 20px;
+        }
+.image_size2 .btn2_2:hover {
+    color: black;
+}
+    .image_size2 .btn2_2:focus::after, .image_size2 .btn2_2:hover::after {
+        width: 100%;
+    }
+
+
+
+    .image_size2 .btn3 {
+        position: absolute;
+        top: 86%;
+        left: 33%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        background-color: rgba(0, 125, 215, 0);
+        color: white;
+        font-size: 25px;
+        padding: 12px 24px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-weight: 700;
+        
+        
+    }
+        .image_size2 .btn3::after {
+            display: block;
+            position: absolute;
+            left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+            width: 0; /*задаём длинну линии до наведения курсора*/
+            height: 2px; /*задаём ширину линии*/
+            background-color: black;
+            color: black;
+            content: "";
+            transition: width 0.3s ease-out; /*задаём время анимации*/
+            margin: 0px 30px 15px 20px;
+        }
+.image_size2 .btn3:hover {
+    color: black;
+}
+.image_size2 .btn3:focus::after, .image_size2 .btn3:hover::after {
+    width: 100%;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+        .image_size2 .textbtn2 {
+            position: absolute;
+            top: 20%;
+            left: 15%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            /*  background-color: 0; */
+            color: white;
+            font-size: 40px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 5px;
+            font-family: 'Poppins',sans-serif;
+        }
+.image_size3 {
+    align-content: center;
+    position: relative;
+    width: 100%;
+    height:100%;
+}
+.image_size3 img {
+    width: 100%;
+    height: auto;
+}
+.image_size3 .textbtn3 {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  /*  background-color: 0; */
+    color: white;
+    font-size: 40px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif; 
+    
+}
+.image_size3 .textbtn4 {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+  /*  background-color: 0; */
+    color: white;
+    font-size: 80px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Poppins',sans-serif; 
+    
+}
+.News {
+    align-content: center;
+    padding-left: 13%;
+    padding-right: 13%;
+    left: 13%;
+    display: block;
+}
+.NewsWord {
+    color: white;
+    font-size: 80px;
+    font-family: 'Poppins',sans-serif;
+}
+.NewsWord1 {
+    color: white;
+    font-size: 40px;
+    font-family: 'Poppins',sans-serif;
+}
+.MiddleWord {
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins',sans-serif;
+
+
+}
+.MI {
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.MI:hover {
+    background-color: #ff0000;
+}
+.MIM {
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px; 
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+    top:5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.MIM:hover {
+    background-color: #ff0000;
+}
+footer {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    transition: .5s linear;
+    width: 100%;
+    position: absolute;
+}
+.footStyle {
+    background-color: #181818;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-family: 'Roboto', sans-serif;
+    color: #808080;
+}
